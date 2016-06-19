@@ -4,5 +4,5 @@ if [ "$DIR" ]
 then 
   cd $DIR && npm i && npm run build && npm run test
 else
-  npm i && npm test
+  npm test
 fi
