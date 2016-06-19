@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - "5.3"
 env:
+  - YO
   - DIR=browserify
   - DIR=browserify-gulp
   - DIR=browserify-grunt
@@ -11,4 +12,4 @@ env:
   - DIR=mocha
   - DIR=jasmine
 script:
-  - bash ./travis-runner.sh
+  - if [ "$DIR" ]; then bash ./travis-runner.sh; else npm test; fi
