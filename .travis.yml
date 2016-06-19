@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "5.3"
 env:
-  - YO
+  - YO=true
   - DIR=browserify
   - DIR=browserify-gulp
   - DIR=browserify-grunt
