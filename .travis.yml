@@ -12,4 +12,4 @@ env:
   - DIR=mocha
   - DIR=jasmine
 script:
-  - bash ./travis-runner.sh
+  - if [ "$DIR" ]; then bash ./travis-runner.sh; else npm test; fi
